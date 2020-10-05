@@ -121,6 +121,11 @@ class Sukisimostock {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-sukisimostock-public.php';
+		
+		/**
+		 * WooCommerce API - PHP Client
+		 */
+		require_once plugin_dir_path(dirname(__FILE__)) . 'vendor/autoload.php';
 
 		$this->loader = new Sukisimostock_Loader();
 
